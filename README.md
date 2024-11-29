@@ -50,6 +50,6 @@ The method assumes that when K is large enough, u will fall within the 1/2 radiu
 
 # Visualization
 
-K - Nearest Neighbors Graph
+K - Nearest Neighbors Graph      
 
 ![KNNG.png](C:\Users\User\OneDrive\文件\GitHub\K-Nearest-Neighbor-Graph\KNNG.png)
