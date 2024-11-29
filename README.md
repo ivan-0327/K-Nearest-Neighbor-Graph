@@ -1,7 +1,5 @@
 # K-Nearest-Neighbor-Graph
 
-
-
 # Goal
 
 K-nearest neighbor graph (K-NNG) is an important method for many web-related applications, such as similarity search.
@@ -49,3 +47,9 @@ The method assumes that when K is large enough, u will fall within the 1/2 radiu
 # Default Parameters
 
 - $K = 20, ρ = 1.0 , ρ = 0.001$
+
+# Visualization
+
+K - Nearest Neighbors Graph
+
+![KNNG.png](C:\Users\User\OneDrive\文件\GitHub\K-Nearest-Neighbor-Graph\KNNG.png)

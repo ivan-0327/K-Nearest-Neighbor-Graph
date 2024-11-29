@@ -26,7 +26,7 @@ class KNNG_Visualizer:
 
         return G
 
-    def draw_graph(self, G):
+    def draw_graph(self, G , file_name):
         plt.figure(figsize=(15, 15))  # 調整圖形大小，這裡設定為 15x15 英寸
         pos = nx.spring_layout(G)  # 使用 spring layout 佈局節點
 
@@ -43,9 +43,10 @@ class KNNG_Visualizer:
         nx.draw_networkx_labels(G, pos, font_size=6, font_family="sans-serif")
 
         # 顯示圖形
-        plt.title("Directed KNN Graph Visualization with Optional Navigating Node Highlighted")
+        plt.title("")
         plt.axis("off")
-        plt.show()
+        #plt.show()
+        plt.savefig(file_name)
 
 
 

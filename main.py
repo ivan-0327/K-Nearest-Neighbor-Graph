@@ -4,6 +4,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 from object_class.KNNG import KNNG_Builder
 from object_class.retriever import Retriever
+from object_class.visualization import KNNG_Visualizer
 if __name__ == "__main__":
     # loading embedding model
     model_name = "mixedbread-ai/mxbai-embed-large-v1"
@@ -32,4 +33,10 @@ if __name__ == "__main__":
     result     , _ = retriever.InVoke( "What is KNNG ?" , k = k )
     result_all     = retriever.Compare_with_all( "What is KNNG ?" , k = k )
     print(retriever.recall( KNNG_result = result , truth_result = result_all ,k = k ))
+
+    #plot 
+    # 如果不希望標記導航節點
+    visualizer_without_navigating_node = KNNG_Visualizer(KNNG.B)
+    G = visualizer_without_navigating_node.create_graph()  # 創建圖
+    visualizer_without_navigating_node.draw_graph(G , 'KNNG.png')  # 繪製圖
 
